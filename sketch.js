@@ -13,7 +13,9 @@ var bg = "sprites/mountain.bg.png";
 var score = 0;
 
 function preload() {
-    getBackgroundImg();
+     bg = "sprites/mountain.bg.png";
+    backgroundImg = loadImage(bg);
+ 
 }
 
 function setup(){
@@ -65,7 +67,7 @@ function setup(){
 }
 
 function draw(){
-    if(backgroundImg)
+   
         background(backgroundImg);
     
         noStroke();
